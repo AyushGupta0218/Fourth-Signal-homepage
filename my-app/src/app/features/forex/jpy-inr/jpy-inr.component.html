@@ -1,0 +1,50 @@
+
+<div class="outer">
+
+    <mat-card>  
+    <div class="main-container">
+        <div id ="left">
+            <div id="rate"> 
+                <h3><b>JPY-INR: </b>{{inrRate}}</h3>
+            </div>
+            <div>
+                <p>
+                    <b>open: </b>{{inrRate}}
+                </p>
+                <p>
+                    <b>close: </b>{{closeRate}}
+                </p>
+                <p>
+                    <b>high: </b>{{highRate}}
+                </p>
+                <p>
+                    <b>low: </b> {{lowRate}}
+                </p>
+    
+            </div>
+        </div>
+        <div id="right">
+    
+           
+    <div>
+    
+        <mat-button-toggle-group [(ngModel)]="fontStyle" aria-label="Font Style">
+          <mat-button-toggle value="bold" (change)="oneyear()">1 year</mat-button-toggle>
+          <mat-button-toggle value="italic" (change)="sixmonth()" >6 months </mat-button-toggle>
+          <mat-button-toggle value="underline" (change)="threemonth()">3 months </mat-button-toggle>
+        </mat-button-toggle-group>
+    
+    
+        <br />
+            <!-- You have selected : {{ toggleBtn.value }} -->
+        </div>
+        
+            <canvas id='currencyChart'></canvas>
+    
+        </div>
+    </div>
+    </mat-card>
+    </div>
+    
+    
+    

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet"> -->
+  </head>
+  <body>
+    <div class="mainContainer" >
+      <div class="header">
+        <div class="topnav">
+          <img
+            src="https://media.licdn.com/dms/image/C4E0BAQHnZM8XBzPakg/company-logo_200_200/0/1629873202301?e=2147483647&v=beta&t=8nvWLIqsg_F0MkFar7UJhKWbAXTauN_vBmRq8QEssVE"
+            width="75"
+            height="75"
+          />
+
+          <div style="padding-right: 3rem;"><a class="active" href="#home">Login</a>
+          <a href="https://www.fourthsignal.com/contact-us">Contact</a>
+          <a href="dashboard/about-us">About us</a></div>
+          </div>
+        </div>
+    
+      <div class="mainContent" style="height: 100%;">
+        
+
+
+
+          <mat-sidenav-container class="example-container" *ngIf="shouldRun" style="height: 100%;width: 100%;">
+            
+            <mat-sidenav #sidenav mode="side" opened style="width: 20%;" >
+              
+            <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                FX Rates
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <!-- <span class="usdinr" > -->
+              <mat-expansion-panel disabled routerLink="usdinr" class="nested">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    USD-INR
+                  </mat-panel-title>
+                </mat-expansion-panel-header >
+              </mat-expansion-panel>
+            <!-- </span><br> -->
+
+
+              <mat-expansion-panel disabled routerLink="gbpinr" class="nested">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    GBP-INR
+                  </mat-panel-title>
+                </mat-expansion-panel-header >
+              </mat-expansion-panel>
+
+
+              <mat-expansion-panel disabled routerLink="jpyinr" class="nested">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    JPY-INR
+                  </mat-panel-title>
+                </mat-expansion-panel-header >
+              </mat-expansion-panel>
+
+
+
+
+
+          </mat-expansion-panel>
+          
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Interest Rates
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <!-- <span class="usdinr" > -->
+              <mat-expansion-panel disabled routerLink="usdinr" class="nested">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    MCLR
+                  </mat-panel-title>
+                </mat-expansion-panel-header >
+              </mat-expansion-panel>
+            <!-- </span><br> -->
+
+
+              <mat-expansion-panel disabled routerLink="usdinr" class="nested">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    MIBOR Rates
+                  </mat-panel-title>
+                </mat-expansion-panel-header >
+              </mat-expansion-panel>
+
+
+              <mat-expansion-panel disabled routerLink="jpyinr" class="nested">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    RBI Repo rates
+                  </mat-panel-title>
+                </mat-expansion-panel-header >
+              </mat-expansion-panel>
+
+              <mat-expansion-panel disabled routerLink="jpyinr" class="nested">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    T-Bill rates
+                  </mat-panel-title>
+                </mat-expansion-panel-header >
+              </mat-expansion-panel>
+
+
+
+
+
+          </mat-expansion-panel>
+
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Securities
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <!-- <span class="usdinr" > -->
+              <mat-expansion-panel disabled routerLink="usdinr" class="nested">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Mutual Funds
+                  </mat-panel-title>
+                </mat-expansion-panel-header >
+              </mat-expansion-panel>
+            <!-- </span><br> -->
+
+
+              <mat-expansion-panel disabled routerLink="usdinr" class="nested">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Equity
+                  </mat-panel-title>
+                </mat-expansion-panel-header >
+              </mat-expansion-panel>
+
+
+
+          </mat-expansion-panel>
+
+
+
+            </mat-sidenav>
+          
+            <mat-sidenav-content style="height:100%;width:100%">
+
+                <router-outlet></router-outlet>
+    
+            </mat-sidenav-content>
+          </mat-sidenav-container>
+          
+          
+          
+         
+          
+
+        <!-- </div> -->
+      
+
+      </div>
+    </div>
+
+   
+    <script>
+        
+    </script>
+   
+    
+  </body>
+</html>
